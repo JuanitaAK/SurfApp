@@ -18,9 +18,9 @@ struct ContentView: View {
                 Text("Surf Spots!")
                     .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                     .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.black)
                     .bold()
-                    .italic()
+                    .padding(.bottom)
                 
                 VStack {
                     Image("SurfBoard")
@@ -53,6 +53,9 @@ struct ContentView: View {
                     .cornerRadius(30)
                     .shadow(radius: 15)
                 .padding()
+                Button( "Spots List") {
+            
+                }
               
             }
             
