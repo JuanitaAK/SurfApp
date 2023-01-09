@@ -30,12 +30,18 @@ struct ListSpotView : View{
         ZStack {
             Color(.white)
                 .ignoresSafeArea()
-            VStack{
+            VStack (alignment: .center, spacing: 20.0){
                 Text("Spots List!")
-                    .multilineTextAlignment(.leading)
-                    .padding(.vertical)
-                    .font(.title)
+                    //.multilineTextAlignment(.leading)
+                    //.padding(.vertical)
+                    //.font(.title)
+                    //.foregroundColor(Color.black)
+                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
                     .foregroundColor(Color.black)
+                    .bold()
+                    .padding(.vertical)
+                Spacer()
                 VStack{
                     NavigationLink(destination: ContentView(), label: {
                         VStack{
@@ -44,7 +50,6 @@ struct ListSpotView : View{
                                 //.background(Color.black)
                                 //.foregroundColor(Color.white)
                                 //.cornerRadius(10)
-                                
                             Text("TitleSurfingSpot Name")
                                 .font(.title2)
                                 .foregroundColor(Color.black)
@@ -58,10 +63,13 @@ struct ListSpotView : View{
                             }
                     })
                 }
+                .scaledToFill()
+                .frame(width: 400, height:90)
                 .background(Rectangle()
                     .foregroundColor(Color.white))
                 .cornerRadius(10)
                 .shadow(radius: 5)
+                Spacer()
             
             }
         }
