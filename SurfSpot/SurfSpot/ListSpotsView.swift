@@ -1,36 +1,19 @@
 //
-//  ContentView.swift
+//  ListSpotsView.swift
 //  SurfSpot
 //
-//  Created by JuanitaAK on 03/01/2023.
+//  Created by JuanitaAK on 06/01/2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListSpotsView: View {
     var body: some View {
-        TabView {
-            Spacer()
-            ListSpotView()
-                .tabItem{
-                    Label("Spots List", systemImage: "list.bullet.circle")
-                }
-            
-            SpotInfoView()
-                .tabItem{
-                    Label("Spot Info",systemImage: "figure.surfing")
-                }
-            Spacer()
-        }
-    }
-}
-
-struct ListSpotView : View{
-    var body: some View{
         ZStack {
             Color(.white)
                 .ignoresSafeArea()
             VStack{
+                
                 Text("Spots List!")
                     .multilineTextAlignment(.leading)
                     .padding(.vertical)
@@ -55,8 +38,12 @@ struct ListSpotView : View{
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
                                 .padding([.leading, .bottom, .trailing])
+                            
                             }
                     })
+                        
+                    
+                        
                 }
                 .background(Rectangle()
                     .foregroundColor(Color.white))
@@ -68,15 +55,17 @@ struct ListSpotView : View{
     }
 }
 
-struct SpotInfoView : View{
-    var body: some View{
+
+/*
+struct ListSpotsView: View {
+    var body: some View {
         
         ZStack {
             Color(.white)
                 .ignoresSafeArea()
             VStack(alignment: .center, spacing: 20.0) {
                 
-                Text("Surf Spot!")
+                Text("Surf Spots!")
                     .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                     .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
                     .foregroundColor(Color.black)
@@ -85,6 +74,7 @@ struct SpotInfoView : View{
                 VStack {
                     Image("SurfBoard")
                         .resizable()
+                        
                         .aspectRatio(contentMode: .fit)
                     HStack {
                         Image(systemName: "figure.surfing")
@@ -111,9 +101,7 @@ struct SpotInfoView : View{
                     .foregroundColor(Color.white))
                     .cornerRadius(30)
                     .shadow(radius: 15)
-                    .padding()
-                /*
-                 //Possible botton
+                .padding()
                 NavigationLink(destination: ListSpotsView(), label: {
                     Text("Spots List")
                         .padding()
@@ -121,17 +109,22 @@ struct SpotInfoView : View{
                         .background(Color.black)
                         .foregroundColor(Color.white)
                         .cornerRadius(10)
+                        
                 })
-                //Button( "Spots List") {}
-                 */
             }
+            
         }
+
     }
 }
-        
 
-struct ContentView_Previews: PreviewProvider {
+*/
+
+
+
+struct ListSpotsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ListSpotsView()
+        //ContentView()
     }
 }

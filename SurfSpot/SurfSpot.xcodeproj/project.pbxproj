@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43BAA7829685491009488D9 /* ListSpotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BAA7729685491009488D9 /* ListSpotsView.swift */; };
+		F43BAA7A2968BACB009488D9 /* Jsondecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BAA792968BACB009488D9 /* Jsondecoder.swift */; };
 		F4C4A4E229646F640032AF94 /* SurfSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4A4E129646F640032AF94 /* SurfSpotApp.swift */; };
 		F4C4A4E429646F640032AF94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4A4E329646F640032AF94 /* ContentView.swift */; };
 		F4C4A4E629646F660032AF94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C4A4E529646F660032AF94 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F43BAA7729685491009488D9 /* ListSpotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSpotsView.swift; sourceTree = "<group>"; };
+		F43BAA792968BACB009488D9 /* Jsondecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jsondecoder.swift; sourceTree = "<group>"; };
 		F4C4A4DE29646F640032AF94 /* SurfSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C4A4E129646F640032AF94 /* SurfSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotApp.swift; sourceTree = "<group>"; };
 		F4C4A4E329646F640032AF94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				F4C4A4E129646F640032AF94 /* SurfSpotApp.swift */,
 				F4C4A4E329646F640032AF94 /* ContentView.swift */,
+				F43BAA7729685491009488D9 /* ListSpotsView.swift */,
+				F43BAA792968BACB009488D9 /* Jsondecoder.swift */,
 				F4C4A4E529646F660032AF94 /* Assets.xcassets */,
 				F4C4A4E729646F660032AF94 /* SurfSpot.entitlements */,
 				F4C4A4E829646F660032AF94 /* Preview Content */,
@@ -139,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43BAA7A2968BACB009488D9 /* Jsondecoder.swift in Sources */,
+				F43BAA7829685491009488D9 /* ListSpotsView.swift in Sources */,
 				F4C4A4E429646F640032AF94 /* ContentView.swift in Sources */,
 				F4C4A4E229646F640032AF94 /* SurfSpotApp.swift in Sources */,
 			);
