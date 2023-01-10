@@ -60,6 +60,9 @@ struct ListSpotView : View{
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
                                 .padding([.leading, .bottom, .trailing])
+                                .onAppear{
+                                    //APIRequest.instance.getData()
+                                }
                             }
                     })
                 }
@@ -134,6 +137,9 @@ struct SpotInfoView : View{
                  */
             }
         }
+        //.onAppear{
+         //   print(APIRequest.instance.getData())
+       // }
     }
 }
         
