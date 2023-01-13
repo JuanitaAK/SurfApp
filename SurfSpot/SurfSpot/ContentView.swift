@@ -27,6 +27,7 @@ struct ContentView: View {
 
 struct ListSpotView : View{
     var body: some View{
+        
         ZStack {
             Color(.white)
                 .ignoresSafeArea()

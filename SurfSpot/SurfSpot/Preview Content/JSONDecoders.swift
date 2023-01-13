@@ -2,61 +2,97 @@
 //  JSONDecoders.swift
 //  SurfSpot
 //
-//  Created by Home on 09/01/2023.
+//  Created by JuanitaAK on 09/01/2023.
 //
 
+
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
+//
+//   let surfAPP = try? JSONDecoder().decode(SurfAPP.self, from: jsonData)
+
+
+
+//Parsin the JSON from the API
 import Foundation
 
-
-//chatGpt proposal
-
-struct DemoData: Codable {
-    var records: [Record]
-}
-
-struct Record: Codable {
-    var id: String
-    var fields: Fields
-    var createdTime: Date
+// MARK: - SurfAPP
+struct SurfAPP: Codable {
+    let records: [Record]
     
-    static let allRecords: [Record] = Bundle.main.decode(file:"Data.json")
-    static let sampleRecod: Record = allRecords[0]
+    
 }
 
+// MARK: - Record
+struct Record: Codable {
+    let id: String
+    let fields: Fields
+    let createdTime: String
+}
+
+// MARK: - Fields
 struct Fields: Codable {
     enum CodingKeys: String, CodingKey {
         case surfBreak = "Surf Break"
         case difficultyLevel = "Difficulty Level"
-        case name = "Destination"
+        case destination = "Destination"
         case geocode = "Geocode"
         case influencers = "Influencers"
-        case link = "Magic Seaweed Link"
+        case magicSeaweedLink = "Magic Seaweed Link"
         case photos = "Photos"
-        case seasonBegins = "Peak Surf Season Begins"
-        case destination = "Destination State/Country"
-        case seasonEnd = "Peak Surf Season Ends"
-        
+        case peakSurfSeasonBegins = "Peak Surf Season Begins"
+        case destinationStateCountry = "Destination State/Country"
+        case peakSurfSeasonEnds = "Peak Surf Season Ends"
+        case address = "Address"
     }
-    var surfBreak: [String]
-    var difficultyLevel: Int
-    var name: String
-    var geocode: String
-    var influencers: [String]
-    var link: URL
-    var photos: [Photo]
-    var seasonBegins: Date
-    var destination: String
-    var seasonEnd: Date
-    
+    let surfBreak: [String]
+    let difficultyLevel: Int
+    let destination, geocode: String
+    let influencers: [String]
+    let magicSeaweedLink: URL
+    let photos: [Photo]
+    let peakSurfSeasonBegins, destinationStateCountry, peakSurfSeasonEnds, address: String
+
 }
 
-struct Photo: Codable{
-    enum CodingKeys: String, CodingKey {
-        case photoLink = "url"
-    }
-    var photoLink: URL
+// MARK: - Photo
+struct Photo: Codable {
+    let id: String
+    let url: String
+    let filename: String
+    let size: Int
+    let type: String
+    let thumbnails: Thumbnails
 }
 
+// MARK: - Thumbnails
+struct Thumbnails: Codable {
+    let small:  Small
+    let large: Large
+    let full: Full
+}
+
+// MARK: - Small
+struct Small: Codable {
+    let url: URL
+    let width, height: Int
+}
+
+// MARK: - Large
+struct Large: Codable {
+    let url: URL
+    let width, height: Int
+}
+
+// MARK: - Full
+struct Full: Codable {
+    let url: URL
+    let width, height: Int
+}
+
+
+
+// Decodind the jason
 
 extension Bundle {
     func decode<T: Decodable>(file:String) -> T{
@@ -66,39 +102,12 @@ extension Bundle {
         
         guard let data = try? Data(contentsOf: url) else {
             fatalError("Courl not load the \(file) in the projetc")
-    }
+        }
         let decoder = JSONDecoder()
         
         guard let loadedData = try? decoder.decode(T.self, from: data) else{
             fatalError("Courl not decode the \(file) in the projetc")
         }
         return loadedData
+    } 
 }
-
-
-/*
-if let bundlePath = Bundle.main.path(forResource: "Data",
-                                     ofType: "json"),
-   let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-    print(jsonData)
-    
-   
-}
-
-
-
-
-private func readLocalFile(forName name: String) -> Data? {
-    do {
-        if let bundlePath = Bundle.main.path(forResource: name,
-                                             ofType: "json"),
-            let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-            return jsonData
-        }
-    } catch {
-        print(error)
-    }
-    
-    return nil
-}
-*/
