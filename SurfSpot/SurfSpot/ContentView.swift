@@ -8,7 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    
+    
     var body: some View {
+        
+        /* NavigationView {
+            List{
+                ForEach (record, id: \.id) {
+                    record in
+                    Text("hey")
+                }
+            }
+        }
+    }
+    
+}
+         */
+       
         TabView {
             Spacer()
             ListSpotView()
@@ -22,12 +40,14 @@ struct ContentView: View {
                 }
             Spacer()
         }
+         
     }
 }
 
 struct ListSpotView : View{
     var body: some View{
         
+
         ZStack {
             Color(.white)
                 .ignoresSafeArea()
@@ -81,6 +101,7 @@ struct ListSpotView : View{
 }
 
 struct SpotInfoView : View{
+    private var record: String = Record.allRecord
     var body: some View{
         
         ZStack {
@@ -94,6 +115,8 @@ struct SpotInfoView : View{
                     .foregroundColor(Color.black)
                     .bold()
                     .padding(.bottom)
+                // ici test pour  passer les objets
+                Text(record)
                 VStack {
                     Image("SurfBoard")
                         .resizable()
@@ -143,7 +166,7 @@ struct SpotInfoView : View{
        // }
     }
 }
-        
+   
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
