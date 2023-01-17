@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
-    
+    //var surfApi: [SurfApp]
     
     var body: some View {
         
@@ -26,20 +25,25 @@ struct ContentView: View {
     
 }
          */
-       
-        TabView {
-            Spacer()
-            ListSpotView()
-                .tabItem{
-                    Label("Spots List", systemImage: "list.bullet.circle")
-                }
+        VStack{
+            SpotListView()
+            TabView {
+                Spacer()
+                ListSpotView()
+                    .tabItem{
+                        Label("Spots List", systemImage: "list.bullet.circle")
+                    }
+                
+                SpotInfoView()
+                    .tabItem{
+                        Label("Spot Info",systemImage: "figure.surfing")
+                    }
+                Spacer()
+            }
             
-            SpotInfoView()
-                .tabItem{
-                    Label("Spot Info",systemImage: "figure.surfing")
-                }
-            Spacer()
         }
+       
+        
          
     }
 }
@@ -100,8 +104,9 @@ struct ListSpotView : View{
     }
 }
 
+
 struct SpotInfoView : View{
-    private var record: String = Record.allRecord
+    
     var body: some View{
         
         ZStack {
@@ -116,7 +121,7 @@ struct SpotInfoView : View{
                     .bold()
                     .padding(.bottom)
                 // ici test pour  passer les objets
-                Text(record)
+                
                 VStack {
                     Image("SurfBoard")
                         .resizable()
