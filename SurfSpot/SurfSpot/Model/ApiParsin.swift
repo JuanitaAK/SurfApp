@@ -6,7 +6,6 @@
 //
 //Parsin the JSON from the API
 
-/*
 import Foundation
 
     // MARK: - SurfAPP
@@ -83,4 +82,4 @@ import Foundation
         let width, height: Int
     }
     
-*/
+
