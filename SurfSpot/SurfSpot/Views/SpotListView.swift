@@ -9,38 +9,58 @@ import SwiftUI
 
 struct SpotListView: View {
     @State private var records = [Records]()
-    @State private var photos = [Records]()
+    
     
     var body: some View {
         
         List(records, id:  \.id){ item in
-            //NavigationLink{
-            
-            
-            
-            VStack(alignment: .leading){
-                HStack{
-                    VStack(alignment: .center){
-                        Text(item.fields.surfBreak[0])
-                            .font(.title2)
-                            .foregroundColor(Color.black)
-                            .padding([.top, .leading, .bottom], 3.0)
-                            .bold()
+           // VStack(alignment: .leading){
+                //NavigationLink(destination: SpotListView(), label: {
+                
+            VStack(alignment: .center){
+                 Spacer()
+                    HStack{
+                        //"https://dl.airtable.com/ZuXJZ2NnTF40kCdBfTld_thomas-ashlock-64485-unsplash.jpg"
+                        AsyncImage(
+                            url:URL(string:item.fields.photos[0].url)){ phase in
+                                if let image = phase.image {
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                } else if phase.error != nil {
+                                    Text("There was an error loading the image.")
+                                } else {
+                                    ProgressView()
+                                }
+                            }
+                            .frame(width: 100, height: 100)
+                            
                         
-                        Text(item.fields.address )
+                        VStack(alignment: .leading){
+                            //Title of the spot
+                            Text(item.fields.surfBreak[0])
+                                .font(.title2)
+                                .foregroundColor(Color.black)
+                                .padding([.top, .leading, .bottom], 3.0)
+                                .bold()
+                            //Adress of the spot
+                            Text(item.fields.address )
+                                .scaledToFit()
+                        }
+                        .scaledToFit()
+                    
                     }
-                    .scaledToFill()
-                }
-                .scaledToFill()
+                Spacer()
+                    .padding(.leading, 16.0)
             }
-            .scaledToFill()
-            .frame(width: 350.0, height:100)
-            .background(Rectangle()
-                .foregroundColor(Color.white))
-            .cornerRadius(10)
-            .shadow(radius: 6)
-            //  }
-            
+            //.padding(.leading, 1.0)
+                .scaledToFit()
+                .frame(width: 350.0, height:100)
+                .background(Rectangle()
+                    .foregroundColor(Color.white))
+                .cornerRadius(10)
+                .shadow(radius: 4)
+          
         }
         .task {
             await decodeAPI()
