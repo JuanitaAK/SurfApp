@@ -2,7 +2,7 @@
 //  SpotRowView.swift
 //  SurfSpot
 //
-//  Created by Home on 18/01/2023.
+//  Created by JuanitaAK on 18/01/2023.
 //
 
 import SwiftUI

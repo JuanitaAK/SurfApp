@@ -2,7 +2,7 @@
 //  ImageDetailView.swift
 //  SurfSpot
 //
-//  Created by Home on 23/01/2023.
+//  Created by JuanitaAK on 23/01/2023.
 //
 
 import SwiftUI
@@ -17,7 +17,7 @@ struct ImageDetailView: View {
                     image
                         .resizable()
                     //.aspectRatio(contentMode: .fit)
-                        .scaledToFit()
+                        .scaledToFill()
                         .cornerRadius(10)
                 } else if phase.error != nil {
                     Text("There was an error loading the image.")

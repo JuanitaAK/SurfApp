@@ -2,7 +2,7 @@
 //  SpotView.swift
 //  SurfSpot
 //
-//  Created by Home on 18/01/2023.
+//  Created by JuanitaAK on 18/01/2023.
 //
 
 import SwiftUI
@@ -13,34 +13,33 @@ struct SpotDetailView : View{
     
     var body: some View{
         
-        ZStack (alignment: .center) {
+        ZStack (alignment: .top) {
             Color(.white)
-               // .ignoresSafeArea()
-            VStack (alignment: .center, spacing: 5.0){
-                
-                Text("Spot Details  🏄‍♀️")
+                .ignoresSafeArea()
+            
+            VStack { //(alignment: .center, spacing: 5.0)
+                Text("Spot Details 🏄‍♀️")
                     .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                     .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
                     .foregroundColor(Color.black)
                     .bold()
                     .padding(.bottom)
                 
-                VStack (alignment: .center){
-                    Text(record.fields.surfBreak[0])
-                        .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(Color.black)
-                        .bold()
-                        .padding(.top)
-                    
-                    ImageDetailView(record: record)
-                        .padding(.bottom)
-                    
-                    Text( " 🌊 Spot:  \(record.fields.destination)" )
+                Text(record.fields.surfBreak[0])
+                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color.black)
+                    .bold()
+                    .padding(.bottom)
+                
+                ImageDetailView(record: record)
+                    .padding([.leading, .bottom, .trailing])
+                
+                VStack(alignment: .leading){
+                    Text( "🌊 Spot:  \(record.fields.destination)" )
                         .font(.title)
                         .foregroundColor(Color.black)
                         .padding(.bottom)
-                    
                     Text(  " 🗺️ Adresse: \(record.fields.destinationStateCountry)")
                         .font(.body)
                         .foregroundColor(Color.black)
@@ -66,19 +65,19 @@ struct SpotDetailView : View{
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.leading)
                         .padding(.bottom)
-                    
                 }
-                .background(Rectangle()
-                    .foregroundColor(Color.white))
-                .cornerRadius(30)
-                .shadow(radius: 15)
-                .padding(.bottom)
+                
+                
             }
-            
-            Spacer()
-            
+            .padding(.leading)
+            .scaledToFit()
+            .frame(width: 400, height: 780, alignment: .center)
+            .background(Rectangle()
+                .foregroundColor(Color.white))
+            .cornerRadius(10)
+            .shadow(radius: 4)
+            .padding(.bottom)
         }
-        
     }
     
 }

@@ -2,7 +2,7 @@
 //  ApiFetcher.swift
 //  SurfSpot
 //
-//  Created by Home on 21/01/2023.
+//  Created by JuanitaAK on 21/01/2023.
 //
 
 import Foundation
@@ -63,43 +63,3 @@ class ApiFetcher : ObservableObject {
         
     }
 }
-
-
-
-/*
- func fetchApi() {
-     
-     isLoading = true
-     
-     let url = URL(string: "https://api.airtable.com/v0/appxT9ln6ixuCb3o1/Surf%20Destinations?api_key=key8okdMqfhplfaKW")!
-     
-     let task = URLSession.shared.dataTask(with: url) {[unowned self] data, response, error in
-         
-         if let response = response as? HTTPURLResponse,!(200...299 ).contains(response.statusCode){
-             //Todo Error
-         }
-         DispatchQueue.main.async {
-             self.isLoading = false
-         }
-         if let data = data {
-             
-             do {
-                 let result = try JSONDecoder().decode(ApiResult.self, from: data)
-               
-                 let records = result.records
-                 DispatchQueue.main.async {
-                     self.records = records
-                 }
-                 
-             } catch {
-                 print(error)
-             }
-             
-         }
-         
-     task.resume()
-         
-     }
-     
- }
- */
