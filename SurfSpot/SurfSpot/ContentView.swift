@@ -9,22 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
+    @StateObject var apiFetcher = ApiFetcher()
+    
     var body: some View {
-        NavigationView{
-            VStack(alignment: .center){
-                Text("Surf Spots List!")
-                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(Color.black)
-                    .bold()
-                    .padding(.bottom)
-                
-                SpotListView()
-            }
-           
+        
+        if apiFetcher.isLoading {
+            LoadingView()
+        } else if apiFetcher.errorMessage != nil {
+            ErrorView(apiFetcher : apiFetcher)
+        } else {
+            RecordsListView( records : apiFetcher.records)
         }
-        .padding(.all)
-        .background(Color.white)
         
     }
 }
@@ -34,3 +30,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

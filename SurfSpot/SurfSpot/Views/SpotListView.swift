@@ -2,81 +2,83 @@
 //  SpotListView.swift
 //  SurfSpot
 //
-//  Created by Home on 17/01/2023.
+//  Created by JuanitaAK on 17/01/2023.
 //
-
+/*
 import SwiftUI
 
 struct SpotListView: View {
-    @State private var records = [Records]()
     
+    @State private var records = [Records]()
     
     var body: some View {
         
         List(records, id:  \.id){ item in
-            // VStack(alignment: .leading){
-            //NavigationLink(destination: SpotListView(), label: {
             
-            VStack(alignment: .center, spacing: -12.0){
+            NavigationLink{
+                SpotInfoView( )
+            } label: {
                 
-                Spacer()
-              
-                HStack(spacing: 19.0){
+                VStack(alignment: .center, spacing: -12.0){
                     
+                    Spacer()
                     
-                    AsyncImage(
-                        url:URL(string:item.fields.photos[0].url)){ phase in
-                            if let image = phase.image {
-                                image
-                                    .resizable()
-                                    .scaledToFit()
-                            } else if phase.error != nil {
-                                Text("There was an error loading the image.")
-                            } else {
-                                ProgressView()
+                    HStack(spacing: 19.0){
+                        
+                        
+                        AsyncImage(
+                            url:URL(string:item.fields.photos[0].url)){ phase in
+                                if let image = phase.image {
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .cornerRadius(10)
+                                } else if phase.error != nil {
+                                    Text("There was an error loading the image.")
+                                } else {
+                                    ProgressView()
+                                }
                             }
-                        }
                         
-                        .frame(width: 100, height: 100)
-                        .padding([.top, .leading, .bottom], -2.0)
-                    
-                    
-                    
-                    VStack(alignment: .leading){
-                        //Title of the spot
-                        Text(item.fields.surfBreak[0])
-                            .font(.title2)
-                            .foregroundColor(Color.black)
-                            .padding([.top, .leading, .bottom], 1.0)
-                            .bold()
+                            .frame(width: 100, height: 100)
+                            .padding([.top, .leading, .bottom], -2.0)
                         
-                        //Adress of the spot
-                        Text(item.fields.address )
+                        
+                        
+                        VStack(alignment: .leading){
                             
+                            //Title of the spot
+                            Text(item.fields.surfBreak[0])
+                                .font(.title2)
+                                .foregroundColor(Color.black)
+                                .padding([.top, .leading, .bottom], 1.0)
+                                .bold()
+                            
+                            //Adress of the spot
+                            Text(item.fields.address )
+                            
+                        }
+                        .padding(.leading, 6.0)
+                        
+                        Spacer()
+                        
                     }
-                    .padding(.leading, 6.0)
-                    //.scaledToFit()
+                    .scaledToFill()
+                    .padding([.top, .leading, .bottom], 2.0)
                     
-                Spacer()
-                    
-                }
-                .scaledToFill()
-                .padding([.top, .leading, .bottom], 2.0)
-               
-                Spacer()
+                    Spacer()
                  
-                //padding(.leading, 1.0)
+                }
+                .padding(.leading)
+                .scaledToFit()
+                .frame(width: 350.0, height:100)
+                .background(Rectangle()
+                    .foregroundColor(Color.white))
+                .cornerRadius(10)
+                .shadow(radius: 4)
             }
-            .padding(.leading)
-            .scaledToFit()
-            .frame(width: 350.0, height:100)
-            .background(Rectangle()
-                .foregroundColor(Color.white))
-            .cornerRadius(10)
-            .shadow(radius: 4)
-            //.padding(.leading, 1.0)
-           
         }
+        
         .task {
             await decodeAPI()
         }
@@ -112,3 +114,5 @@ struct SpotListView_Previews: PreviewProvider {
     }
 }
 
+
+*/
