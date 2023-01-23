@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F41D95C2297EADFB005AF3D5 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D95C1297EADFB005AF3D5 /* LinkView.swift */; };
+		F41D95C6297EC8A6005AF3D5 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D95C5297EC8A6005AF3D5 /* ImageDetailView.swift */; };
+		F41D95C8297ECC14005AF3D5 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D95C7297ECC14005AF3D5 /* ImageListView.swift */; };
 		F43707D02970667B009D37B6 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F43707CF2970667B009D37B6 /* Data.json */; };
-		F44B29F12976E8FB00A75539 /* SpotListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B29F02976E8FB00A75539 /* SpotListModel.swift */; };
-		F44B29F32976F4E900A75539 /* SpotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B29F22976F4E900A75539 /* SpotListView.swift */; };
 		F46F70E7297C6252007E22EF /* ApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F70E6297C6252007E22EF /* ApiFetcher.swift */; };
 		F46F70E9297C6744007E22EF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F70E8297C6744007E22EF /* LoadingView.swift */; };
 		F46F70EB297C675A007E22EF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F70EA297C675A007E22EF /* ErrorView.swift */; };
@@ -21,7 +21,6 @@
 		F4C4A4E629646F660032AF94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C4A4E529646F660032AF94 /* Assets.xcassets */; };
 		F4C4A4EA29646F660032AF94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C4A4E929646F660032AF94 /* Preview Assets.xcassets */; };
 		F4D25A5F296C5B340011ADA8 /* JsonParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D25A5E296C5B340011ADA8 /* JsonParsing.swift */; };
-		F4E70BBC29782DB20070F6C6 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E70BBB29782DB20070F6C6 /* TabView.swift */; };
 		F4E70BBE29782F480070F6C6 /* SpotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E70BBD29782F480070F6C6 /* SpotDetailView.swift */; };
 		F4E70BC029783BDA0070F6C6 /* RecordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E70BBF29783BDA0070F6C6 /* RecordsListView.swift */; };
 		F4EFE8A5297CB41400FF3F03 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFE8A4297CB41400FF3F03 /* RecordRow.swift */; };
@@ -29,9 +28,9 @@
 
 /* Begin PBXFileReference section */
 		F41D95C1297EADFB005AF3D5 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		F41D95C5297EC8A6005AF3D5 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		F41D95C7297ECC14005AF3D5 /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
 		F43707CF2970667B009D37B6 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Data.json; path = ../../../../../../../Desktop/Data.json; sourceTree = "<group>"; };
-		F44B29F02976E8FB00A75539 /* SpotListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListModel.swift; sourceTree = "<group>"; };
-		F44B29F22976F4E900A75539 /* SpotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListView.swift; sourceTree = "<group>"; };
 		F46F70E6297C6252007E22EF /* ApiFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetcher.swift; sourceTree = "<group>"; };
 		F46F70E8297C6744007E22EF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F46F70EA297C675A007E22EF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -44,7 +43,6 @@
 		F4C4A4E729646F660032AF94 /* SurfSpot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SurfSpot.entitlements; sourceTree = "<group>"; };
 		F4C4A4E929646F660032AF94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4D25A5E296C5B340011ADA8 /* JsonParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParsing.swift; sourceTree = "<group>"; };
-		F4E70BBB29782DB20070F6C6 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		F4E70BBD29782F480070F6C6 /* SpotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailView.swift; sourceTree = "<group>"; };
 		F4E70BBF29783BDA0070F6C6 /* RecordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsListView.swift; sourceTree = "<group>"; };
 		F4EFE8A4297CB41400FF3F03 /* RecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
@@ -62,38 +60,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F44B29EF2976E88D00A75539 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				F44B29F02976E8FB00A75539 /* SpotListModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		F44B29F42976F4F900A75539 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F44B29F22976F4E900A75539 /* SpotListView.swift */,
-				F4E70BBB29782DB20070F6C6 /* TabView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		F44B29F52977326400A75539 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				F4D25A5E296C5B340011ADA8 /* JsonParsing.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F46F70EC297C793F007E22EF /* ViewsTest */ = {
-			isa = PBXGroup;
-			children = (
-				F4EFE8A3297CB39A00FF3F03 /* Views */,
-				F4EFE8A2297CB36C00FF3F03 /* ApiCenter */,
-			);
-			path = ViewsTest;
 			sourceTree = "<group>";
 		};
 		F4C4A4D529646F640032AF94 = {
@@ -118,10 +90,9 @@
 				F4EFE8A6297D744800FF3F03 /* Info.plist */,
 				F4C4A4E129646F640032AF94 /* SurfSpotApp.swift */,
 				F4C4A4E329646F640032AF94 /* ContentView.swift */,
-				F46F70EC297C793F007E22EF /* ViewsTest */,
+				F4EFE8A3297CB39A00FF3F03 /* Views */,
+				F4EFE8A2297CB36C00FF3F03 /* ApiCenter */,
 				F44B29F52977326400A75539 /* Model */,
-				F44B29F42976F4F900A75539 /* Views */,
-				F44B29EF2976E88D00A75539 /* ViewModel */,
 				F4C4A4E529646F660032AF94 /* Assets.xcassets */,
 				F4C4A4E729646F660032AF94 /* SurfSpot.entitlements */,
 				F4C4A4E829646F660032AF94 /* Preview Content */,
@@ -154,11 +125,14 @@
 				F46F70E8297C6744007E22EF /* LoadingView.swift */,
 				F46F70EA297C675A007E22EF /* ErrorView.swift */,
 				F4EFE8A4297CB41400FF3F03 /* RecordRow.swift */,
+				F41D95C7297ECC14005AF3D5 /* ImageListView.swift */,
 				F4E70BBF29783BDA0070F6C6 /* RecordsListView.swift */,
 				F4E70BBD29782F480070F6C6 /* SpotDetailView.swift */,
 				F41D95C1297EADFB005AF3D5 /* LinkView.swift */,
+				F41D95C5297EC8A6005AF3D5 /* ImageDetailView.swift */,
 			);
-			path = Views;
+			name = Views;
+			path = ViewsTest/Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,16 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44B29F32976F4E900A75539 /* SpotListView.swift in Sources */,
+				F41D95C6297EC8A6005AF3D5 /* ImageDetailView.swift in Sources */,
 				F46F70F0297C874B007E22EF /* ApiService.swift in Sources */,
 				F4D25A5F296C5B340011ADA8 /* JsonParsing.swift in Sources */,
 				F46F70E9297C6744007E22EF /* LoadingView.swift in Sources */,
 				F41D95C2297EADFB005AF3D5 /* LinkView.swift in Sources */,
-				F4E70BBC29782DB20070F6C6 /* TabView.swift in Sources */,
 				F46F70E7297C6252007E22EF /* ApiFetcher.swift in Sources */,
+				F41D95C8297ECC14005AF3D5 /* ImageListView.swift in Sources */,
 				F46F70EE297C82DA007E22EF /* ApiError.swift in Sources */,
 				F4EFE8A5297CB41400FF3F03 /* RecordRow.swift in Sources */,
-				F44B29F12976E8FB00A75539 /* SpotListModel.swift in Sources */,
 				F4E70BBE29782F480070F6C6 /* SpotDetailView.swift in Sources */,
 				F4E70BC029783BDA0070F6C6 /* RecordsListView.swift in Sources */,
 				F4C4A4E429646F640032AF94 /* ContentView.swift in Sources */,
