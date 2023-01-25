@@ -18,7 +18,15 @@ struct ImageListView: View {
                         .scaledToFit()
                         .cornerRadius(10)
                 } else if phase.error != nil {
-                    Text("There was an error loading the image.")
+                    HStack(alignment: .center){
+                        Text("😬")
+                            .font(.system(size: 20))
+                        Text("Problem with the image.")
+
+                    }
+                    .multilineTextAlignment(.leading)
+
+                      
                 } else {
                     ProgressView()
                 }

@@ -122,13 +122,13 @@
 		F4EFE8A3297CB39A00FF3F03 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F46F70E8297C6744007E22EF /* LoadingView.swift */,
 				F46F70EA297C675A007E22EF /* ErrorView.swift */,
 				F4EFE8A4297CB41400FF3F03 /* RecordRow.swift */,
-				F41D95C7297ECC14005AF3D5 /* ImageListView.swift */,
 				F4E70BBF29783BDA0070F6C6 /* RecordsListView.swift */,
 				F4E70BBD29782F480070F6C6 /* SpotDetailView.swift */,
+				F46F70E8297C6744007E22EF /* LoadingView.swift */,
 				F41D95C1297EADFB005AF3D5 /* LinkView.swift */,
+				F41D95C7297ECC14005AF3D5 /* ImageListView.swift */,
 				F41D95C5297EC8A6005AF3D5 /* ImageDetailView.swift */,
 			);
 			name = Views;

@@ -20,13 +20,19 @@ struct ImageDetailView: View {
                         .scaledToFill()
                         .cornerRadius(10)
                 } else if phase.error != nil {
-                    Text("There was an error loading the image.")
+                    Text("😭 ")
+                        .font(.system(size: 60))
+                    Text("Sorry... can't load the image.")
+                        .multilineTextAlignment(.leading)
+                        
                 } else {
                     ProgressView()
                 }
-            }
-            .padding([.all],6.0)
-
+            } 
+            .frame(width: 410, height: 300)
+            .padding([.horizontal],-15.0)
+            .cornerRadius(20)
+            .shadow(radius: 15)
     }
 }
 

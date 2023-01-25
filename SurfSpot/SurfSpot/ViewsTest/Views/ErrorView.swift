@@ -15,7 +15,8 @@ struct ErrorView: View {
         VStack{
             
             Text(" 😭")
-                .font(.system(size: 80))
+                .font(.system(size: 100))
+            Text("Probem with the API")
             Text(apiFetcher.errorMessage ?? "")
         }
       

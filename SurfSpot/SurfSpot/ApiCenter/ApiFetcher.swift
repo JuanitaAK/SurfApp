@@ -27,6 +27,7 @@ class ApiFetcher : ObservableObject {
         
         let service = ApiService()
         let url = URL(string: "https://api.airtable.com/v0/appxT9ln6ixuCb3o1/Surf%20Destinations?api_key=key8okdMqfhplfaKW")
+        //let url = URL(string: "http://127.0.0.1:5000/spots")
         
         service.fetch(url: url){ [unowned self] result in
             

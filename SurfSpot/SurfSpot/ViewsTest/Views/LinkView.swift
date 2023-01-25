@@ -16,12 +16,13 @@ struct LinkView: View {
                 Text("👩‍💻 Show spot website ")
             }
             
-        }.frame(width: 250, height: 60)
+        }.frame(width: 210, height: 40)
               .foregroundColor(.black)
               .background(Rectangle()
                   .foregroundColor(Color.white))
               .cornerRadius(5)
-              .shadow(radius: 4)
+              .shadow(radius: 7)
+              .padding(.horizontal)
               
     }
 }
