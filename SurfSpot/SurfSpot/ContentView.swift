@@ -20,14 +20,12 @@ struct ContentView: View {
             ErrorView(apiFetcher : apiFetcher)
         } else {
             RecordsListView( records : apiFetcher.records)
-        }
-        
+            }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

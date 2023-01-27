@@ -7,7 +7,11 @@
 
 import SwiftUI
 
+
+
 struct RecordsListView: View {
+    
+    // @State private var selectedTab: Tab = .list
     
     let records: [Records]
     
@@ -17,14 +21,14 @@ struct RecordsListView: View {
             List(records, id:  \.id){ record in
                 
                 NavigationLink{
-                    SpotDetailView( record: record )
+                    SpotDetailView(record: record )
+                        
                 } label: {
                     RecordRow(record: record)
                 }
             }
             .navigationTitle("Surf Spots List")
         }
-        
     }
 }
         

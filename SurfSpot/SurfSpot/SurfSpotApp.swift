@@ -11,7 +11,7 @@ import SwiftUI
 struct SurfSpotApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewTabView()
         }
     }
 }

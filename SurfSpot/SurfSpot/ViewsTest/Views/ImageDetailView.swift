@@ -29,7 +29,7 @@ struct ImageDetailView: View {
                     ProgressView()
                 }
             } 
-            .frame(width: 410, height: 300)
+            .frame(width: 390, height: 290)
             .padding([.horizontal],-15.0)
             .cornerRadius(20)
             .shadow(radius: 15)
