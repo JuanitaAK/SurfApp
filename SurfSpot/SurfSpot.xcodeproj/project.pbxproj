@@ -12,6 +12,7 @@
 		F41D95C8297ECC14005AF3D5 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D95C7297ECC14005AF3D5 /* ImageListView.swift */; };
 		F42DCEBC2983DC5F00E0ED5F /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBB2983DC5F00E0ED5F /* FavoriteButton.swift */; };
 		F42DCEBF2983DD1B00E0ED5F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEBE2983DD1B00E0ED5F /* MapView.swift */; };
+		F42DCEC129847F4C00E0ED5F /* DifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DCEC029847F4C00E0ED5F /* DifficultyView.swift */; };
 		F43707D02970667B009D37B6 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F43707CF2970667B009D37B6 /* Data.json */; };
 		F46F70E7297C6252007E22EF /* ApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F70E6297C6252007E22EF /* ApiFetcher.swift */; };
 		F46F70E9297C6744007E22EF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F70E8297C6744007E22EF /* LoadingView.swift */; };
@@ -26,8 +27,7 @@
 		F4E70BBE29782F480070F6C6 /* SpotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E70BBD29782F480070F6C6 /* SpotDetailView.swift */; };
 		F4E70BC029783BDA0070F6C6 /* RecordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E70BBF29783BDA0070F6C6 /* RecordsListView.swift */; };
 		F4EFE8A5297CB41400FF3F03 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFE8A4297CB41400FF3F03 /* RecordRow.swift */; };
-		F4F37C5A2981B4D300C5C477 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F37C592981B4D300C5C477 /* FormView.swift */; };
-		F4F37C5C2981B82F00C5C477 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F37C5B2981B82F00C5C477 /* TabView.swift */; };
+		F4F37C5C2981B82F00C5C477 /* NewTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F37C5B2981B82F00C5C477 /* NewTabView.swift */; };
 		F4F37C5F29829BA000C5C477 /* NewSpotViewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F37C5E29829BA000C5C477 /* NewSpotViewForm.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +37,7 @@
 		F41D95C7297ECC14005AF3D5 /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
 		F42DCEBB2983DC5F00E0ED5F /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		F42DCEBE2983DD1B00E0ED5F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F42DCEC029847F4C00E0ED5F /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
 		F43707CF2970667B009D37B6 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Data.json; path = ../../../../../../../Desktop/Data.json; sourceTree = "<group>"; };
 		F46F70E6297C6252007E22EF /* ApiFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetcher.swift; sourceTree = "<group>"; };
 		F46F70E8297C6744007E22EF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -54,8 +55,7 @@
 		F4E70BBF29783BDA0070F6C6 /* RecordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsListView.swift; sourceTree = "<group>"; };
 		F4EFE8A4297CB41400FF3F03 /* RecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
 		F4EFE8A6297D744800FF3F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F4F37C592981B4D300C5C477 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
-		F4F37C5B2981B82F00C5C477 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		F4F37C5B2981B82F00C5C477 /* NewTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTabView.swift; sourceTree = "<group>"; };
 		F4F37C5E29829BA000C5C477 /* NewSpotViewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpotViewForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				F42DCEBB2983DC5F00E0ED5F /* FavoriteButton.swift */,
-				F4F37C5E29829BA000C5C477 /* NewSpotViewForm.swift */,
-				F4F37C592981B4D300C5C477 /* FormView.swift */,
 				F42DCEBE2983DD1B00E0ED5F /* MapView.swift */,
 			);
 			path = "En cours";
@@ -111,7 +109,7 @@
 				F4EFE8A6297D744800FF3F03 /* Info.plist */,
 				F4C4A4E129646F640032AF94 /* SurfSpotApp.swift */,
 				F4C4A4E329646F640032AF94 /* ContentView.swift */,
-				F4F37C5B2981B82F00C5C477 /* TabView.swift */,
+				F4F37C5B2981B82F00C5C477 /* NewTabView.swift */,
 				F4EFE8A3297CB39A00FF3F03 /* Views */,
 				F4EFE8A2297CB36C00FF3F03 /* ApiCenter */,
 				F44B29F52977326400A75539 /* Model */,
@@ -147,6 +145,8 @@
 				F42DCEBD2983DCC500E0ED5F /* En cours */,
 				F46F70EA297C675A007E22EF /* ErrorView.swift */,
 				F4EFE8A4297CB41400FF3F03 /* RecordRow.swift */,
+				F42DCEC029847F4C00E0ED5F /* DifficultyView.swift */,
+				F4F37C5E29829BA000C5C477 /* NewSpotViewForm.swift */,
 				F4E70BBF29783BDA0070F6C6 /* RecordsListView.swift */,
 				F4E70BBD29782F480070F6C6 /* SpotDetailView.swift */,
 				F46F70E8297C6744007E22EF /* LoadingView.swift */,
@@ -234,6 +234,7 @@
 				F46F70F0297C874B007E22EF /* ApiService.swift in Sources */,
 				F42DCEBC2983DC5F00E0ED5F /* FavoriteButton.swift in Sources */,
 				F4D25A5F296C5B340011ADA8 /* JsonParsing.swift in Sources */,
+				F42DCEC129847F4C00E0ED5F /* DifficultyView.swift in Sources */,
 				F46F70E9297C6744007E22EF /* LoadingView.swift in Sources */,
 				F41D95C2297EADFB005AF3D5 /* LinkView.swift in Sources */,
 				F46F70E7297C6252007E22EF /* ApiFetcher.swift in Sources */,
@@ -241,11 +242,10 @@
 				F46F70EE297C82DA007E22EF /* ApiError.swift in Sources */,
 				F4EFE8A5297CB41400FF3F03 /* RecordRow.swift in Sources */,
 				F4E70BBE29782F480070F6C6 /* SpotDetailView.swift in Sources */,
-				F4F37C5C2981B82F00C5C477 /* TabView.swift in Sources */,
+				F4F37C5C2981B82F00C5C477 /* NewTabView.swift in Sources */,
 				F4E70BC029783BDA0070F6C6 /* RecordsListView.swift in Sources */,
 				F4C4A4E429646F640032AF94 /* ContentView.swift in Sources */,
 				F42DCEBF2983DD1B00E0ED5F /* MapView.swift in Sources */,
-				F4F37C5A2981B4D300C5C477 /* FormView.swift in Sources */,
 				F4C4A4E229646F640032AF94 /* SurfSpotApp.swift in Sources */,
 				F46F70EB297C675A007E22EF /* ErrorView.swift in Sources */,
 			);

@@ -18,14 +18,15 @@ struct NewTabView: View {
                 .tabItem {
                     Label("List", systemImage: "list.bullet.circle")
                 }
-            FormView()
+            //FormView()
+            NewSpotForm()
                 .tabItem {
                     Label("Add a Spot", systemImage: "plus.circle")
                 }
-            Text("Favorites")
-                .tabItem{
-                    Label("Favorites",systemImage: "house")
-                }
+//            Text("Favorites")
+//                .tabItem{
+//                    Label("Favorites",systemImage: "house")
+//                }
         }
     }
 }

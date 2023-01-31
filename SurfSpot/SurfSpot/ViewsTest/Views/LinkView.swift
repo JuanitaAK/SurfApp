@@ -13,16 +13,16 @@ struct LinkView: View {
     var body: some View {
         Link(destination: URL(string: record.fields.magicSeaweedLink)!){
             HStack{
-                Text("👩‍💻 Show spot website ")
+                Text("👩‍💻 Spot website ")
             }
             
         }.frame(width: 210, height: 40)
-              .foregroundColor(.black)
+              .foregroundColor(.blue)
               .background(Rectangle()
                   .foregroundColor(Color.white))
-              .cornerRadius(5)
+              .cornerRadius(20)
               .shadow(radius: 7)
-              .padding(.horizontal)
+              .padding(.all)
               
     }
 }

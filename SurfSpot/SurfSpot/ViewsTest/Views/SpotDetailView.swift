@@ -11,6 +11,7 @@ struct SpotDetailView : View{
     
     var record: Records
     
+    
     var body: some View{
         
        
@@ -21,6 +22,10 @@ struct SpotDetailView : View{
                 .foregroundColor(Color.black)
                 .bold()
                 .padding([.bottom ], 3)
+          
+            
+            
+            
             //Problem with api geolocation. system crashe in some spots.
 //        MapView(addressNav: record.fields.destination)
 //                        .ignoresSafeArea(edges: .top)
@@ -62,19 +67,20 @@ struct SpotDetailView : View{
                     .padding(.bottom,5)
                 LinkView(record: record)
                     .font(.body)
-                    .foregroundColor(Color.black)
+                    //.foregroundColor(Color.blue)
                     .multilineTextAlignment(.leading)
                     .padding(.bottom, 3)
             }
         }
         .padding(.leading)
         .scaledToFill()
-        .frame(width: 400, height: 680, alignment: .center)
+        .frame(width: 400, height: 700, alignment: .center)
         .background(Rectangle()
-            .foregroundColor(Color.white))
+            .foregroundColor(Color.white)
+            )
         .cornerRadius(15)
         .shadow(radius: 10)
-        .padding([.bottom, .top], -17)
+        .padding([.bottom, .top], -20)
    
     Spacer()
         
